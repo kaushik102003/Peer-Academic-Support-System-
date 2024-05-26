@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #282727, #49a9b9);
+            color: white;
+            margin: 0;
+            padding: 0;
+            position: relative; /* Add relative positioning */
+            min-height: 100vh; /* Set minimum height to full viewport height */
+        }
+        .header {
+            background-color: black;
+            text-align: center;
+            padding: 20px 0; /* Increased padding */
+            margin-bottom: 20px; /* Added margin bottom */
+        }
+        .header img {
+            width: 250px; /* Increased image size */
+            height: 70px;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Center items vertically */
+            padding-top: 50px;
+            padding-bottom: 100px; /* Adjusted padding to make space for footer */
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allow cards to wrap to the next line */
+            max-width: 800px; /* Set maximum width */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+        .card {
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: inherit;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            width: calc(50% - 20px); /* Adjusted width to occupy 50% of the container width with margins considered */
+            cursor: pointer;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        .study-group {
+            background-color: #007bff; /* Blue color for Study Group */
+        }
+        .discussion-group {
+            background-color: #fd7e14; /* Orange color for Discussion Group */
+        }
+        .card img {
+            width: auto; /* Increase the width of the image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 60%;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0; /* Increased padding */
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <a href="#"><img src="StudyHub.png" alt="StudyHub Image"></a> <!-- Wrapped image in a link -->
+</div>
+
+<!-- Main Content -->
+<div class="content">
+    <div class="card-container">
+        <!-- Study Group Card -->
+        <div class="card study-group">
+            <img src="StudyGroup.jpg" alt="Study Group Image">
+            <h5 class="card-title">Study Group</h5>
+            <!-- Replace description with styled buttons -->
+            <div>
+                <!-- Styled "Create" button -->
+                <button class="btn btn-lg btn-danger mr-3" onclick="location.href='create-study-group.html';">Create</button>
+                <!-- Styled "Join" button -->
+                <button class="btn btn-lg btn-info">Join</button>
+            </div>
+        </div>
+
+        <!-- Discussion Group Card -->
+        <div class="card discussion-group">
+            <img src="Discussion.jpg" alt="Discussion Group Image">
+            <h5 class="card-title">Discussion Groups</h5>
+            <!-- Replace description with styled buttons -->
+            <div>
+                <!-- Styled "Create" button -->
+                <button class="btn btn-lg btn-danger mr-3" onclick="location.href='create-discussion-group.html';">Create</button>
+                <!-- Styled "Join" button -->
+                <button class="btn btn-lg btn-info">Join</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>©️ 2024 StudyHub. All rights reserved.</p>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Include frontend.js -->
+<script src="frontend.js"></script>
+</body>
+</html>
+
+
